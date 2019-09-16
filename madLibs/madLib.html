@@ -17,6 +17,7 @@
 			 <button id="lib-button">Lib it!</button>
 			  
 			 <div id="story"></div>  
+			 <script> "src=madlibs.js" </script>
 		</body>
 	</html>
 	
@@ -24,5 +25,25 @@
 1) Add a script tag to the bottom of the page for your code.
 2) Add an event listener to the button so that it calls a makeMadLib function when clicked.
 3)In the makeMadLib function, retrieve the current values of the form input elements, make a story from them, and output that in the story div (like "Laura really likes pink cucumbers.") -->
-
+<!-- // step  1: user enters infor and clicks the button 
+	
+	function makeMadLib
+<!-- //step 2: create an event listener to be listening on the button, so that when the user clicks it we can execute a call back function - jquery , use .on() for click event -->
+<!-- step 3: create a function that has 3 vars, one for each of the words the users types in. Each of those vars will have the value of what the user typed in. - use jquery .val() method
+step 4: display the data in a sentence to the user - jquery .append() to the div in the html
+step 5: create a var and set it equal to empty curly brackets. add the 3 key value pairs with dot notation. --> -->
 <!-- Bonus: Make an object with the list elements as keys and the inputs as values.  -->
+$(document).ready(function(){
+	function makeMadLib(){
+		var noun= $("#noun").val();
+		var adjective = $("#adjective").val();
+		var personName = $("#person".val;
+		$("#story").append(
+			"<p>"" +personName + " really likes " + adjective + " " + noun + "<p>"
+		)
+		
+		)}
+
+}
+
+) -->
