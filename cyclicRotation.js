@@ -19,7 +19,7 @@
 //.unshift() adds a new item to the beginning of an array
 //.shft() removes element at beginning.
 //adding something the beginning "prepend" or unshift() or push()
-//shift() pop() append removes somethign from the end
+//shift() pop() append removes something from the end
 //shift, unshift, push and pop methods to work with arrays, we want to use them to get teh last element in the array and move it to the beginning each time the loop runs
 //output the array once the loop has finished.
 
