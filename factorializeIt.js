@@ -25,3 +25,21 @@ function factorializeIt(num) {
   }
   factorializeIt(5);
   //console.log(factorializeIt(5)) to see your result. it should be 120.
+  function factorializeIt(num) {
+    if (num === 0 || num === 1)
+      return 1;
+    for (var i = num - 1; i >= 1; i--) {
+      num *= i;
+    }
+    return num;
+  }
+  factorializeIt(5);
+
+  function factorializeIt(num) {
+    var output = 1;
+    for (var i = 1; i <= num; i++) {
+      output= output * i;
+    }
+    return output;
+  }
+  factorializeIt(5);
