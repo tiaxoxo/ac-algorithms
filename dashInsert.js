@@ -24,7 +24,23 @@ var result = isBigger("13");
 console.log(result) // "1-3"
 
 **/
+// use a var to store the output string
+//create a var to store the transformation of the number to an array of numbers first to a string and then to an array, tools: .toString() .split()
+//create a for loop to go thru each of the numbers in array
+// need conditional statement that will test if teh number is odd && if the number after it is odd
+//if true I want to add the number
 
-function dashInsert(str) {
-	// Your code
-}
+  function DashInsert(num){
+	  var output ="";
+	  var array = num.toString().split('');
+	  for (var i =0; i< array.length; i++);{
+		  if (array[i] % 2 === 1 && output[i+1] % 2 == 1);{
+			  output = output + array[i] + "-";
+			  else{
+				  output = ouput + array [i];
+			  }
+		  }
+	  }
+	  return output;
+  }
+  DashInsert(34567);
