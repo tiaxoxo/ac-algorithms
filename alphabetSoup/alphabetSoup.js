@@ -34,6 +34,8 @@ console.log(result) // "ghimmnorstyy"
 **/
 
 function alphabetSoup(str) {
-	//Your code here
-	
+	var output = str.split("").sort().join("").trim("");
+	return output;
 }
+var result = alphabetSoup("Soup Is GREAAAAT!!!");
+console.log(result);
